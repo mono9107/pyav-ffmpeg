@@ -365,8 +365,6 @@ def main():
         "--enable-libopenh264",
         "--enable-libxcb" if plat == "Linux" else "--disable-libxcb",
         "--enable-zlib",
-        "--enable-libx264",
-        "--enable-libx265",
     ]
 
     if use_cuda:
