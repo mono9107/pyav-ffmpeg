@@ -288,7 +288,7 @@ def main():
 
     # Use Intel VPL (Video Processing Library) if supported to enable Intel QSV (Quick Sync Video)
     # hardware encoders/decoders on modern integrated and discrete Intel GPUs.
-    use_libvpl = plat in {"Linux", "Windows"} and not is_arm
+    use_libvpl = False
 
     # Use GnuTLS only on Linux, FFmpeg has native TLS backends for macOS and Windows.
     use_gnutls = plat == "Linux"
